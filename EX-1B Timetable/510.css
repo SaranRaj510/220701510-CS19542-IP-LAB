@@ -1,0 +1,78 @@
+/* Reset default margin and padding for a cleaner layout */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Container styling for centering the content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+td.break {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+td.tbreak {
+    background-color: #dcdcdc;
+}
+
+.red {
+    color: red;
+}
+
+td[colspan] {
+    text-align: left;
+}
+
+caption {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Add alternating row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
