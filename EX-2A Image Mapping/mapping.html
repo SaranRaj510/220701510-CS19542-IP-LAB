@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Map Image Map</title>
+   
+</head>
+<body>
+    <h1>Indian Map with Hotspots</h1>
+    <p>Click on different regions of the map to learn more about them.</p>
+
+    <!-- Image with image map -->
+    <img src="map.jpg" alt="Map of India" usemap="#indiaMap">
+
+    <!-- Image map definition -->
+    <map name="indiaMap" id="indiaMap">
+        <!-- Rectangular Hotspot (e.g., Northern Region) -->
+        <area shape="rect" coords="582,2,2,419" href="nr.html" alt="Northern Region">
+
+        <!-- Circular Hotspot (e.g., Mumbai) -->
+        <area shape="rect" coords="212,572,143,613" href="mumbai.html" alt="Mumbai">
+
+        <!-- Polygonal Hotspot (e.g., Southern Region) -->
+        <area shape="rect" coords="108,627,447,980," href="sr.html" alt="Southern Region">
+    </map>
+
+    <!-- Information sections -->
+    <div id="northernRegion">
+        
+    </div>
+
+    <div id="mumbai">
+        
+    </div>
+
+    <div id="southernRegion">
+        
+    </div>
+
+</body>
+</html>
