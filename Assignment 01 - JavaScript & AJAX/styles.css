@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em auto;
+    max-width: 1200px;
+}
+
+/* Task Form */
+#task-form-section {
+    flex: 1;
+    margin-right: 2em;
+}
+
+#task-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#task-form input, #task-form textarea, #task-form button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#task-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#task-form button:hover {
+    background-color: #45a049;
+}
+
+/* Sidebar */
+#task-sidebar {
+    width: 20%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
+#task-sidebar ul {
+    list-style: none;
+}
+
+#task-sidebar button {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
+
+#task-sidebar button:hover {
+    background-color: #ddd;
+}
+
+/* Task List */
+#task-list-section {
+    flex: 2;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+}
+
+footer nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
